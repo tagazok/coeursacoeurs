@@ -1,0 +1,347 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font: 16px/25px Roboto;
+    font-weight: 300;
+}
+.parallax {
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    /*background-image: url("images/ban1.png");*/
+    background-image: url("images/ban2.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.philippines-map {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.intro {
+    /*background: url("images/intro.jpg") no-repeat 0 0 fixed;
+    background-size: cover;*/
+
+    /*color: #fff;*/
+    /*padding-top: 1em;*/
+    color: #151515;
+    padding-bottom: 50px;
+    padding-top: 150px;
+
+    /*background-image: url("images/bg-land-blur.jpg"); */
+    background-image: url("images/jane-riz2.jpg");
+    /*background-image: url("images/jane-cartons.png");*/
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align: justify;
+}
+
+.intro .content {
+    width: 80%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro .content h1 {
+    text-align: center;
+    color: rgb(51, 51, 51);
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.give {
+    background: rgb(245, 234, 196) url("images/give-bg.png");
+    padding: 32px 0 20px 0;
+}
+
+.give .content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.give .content .title {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(128, 0, 0);
+
+    line-height: 2em;
+}
+
+.give .content .body {
+    display: flex;
+    flex-direction: column;
+}
+
+.give .content .body .logo {
+    width: 100%;
+}
+
+.give .content .body .pouet{
+    width: 100%;
+    color: rgb(82, 82, 82);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.action {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.action i {
+    margin-right: 15px;
+    font-size: 60px;
+    width: 70px;
+}
+
+.action .description {
+    flex: 1;
+}
+
+.food {
+    color: #2ca194;
+}
+.hospital {
+    color: #c82139;
+}
+.shetlers {
+    color: #e4af22;
+}
+.heart {
+    color: #353535;
+}
+@media(min-width: 960px) {
+    .give .content .body {
+        flex-direction: row;
+    }
+    .give .content .body .logo {
+        width: 30%;
+    }
+    .give .content .body .pouet{
+        width: 70%;
+        text-align: normal;
+            margin-left: 20px;
+    }
+}
+
+/*.give .content .body .logo {
+    width: 30%;
+}*/
+
+.give .content .body .logo img {
+    width: 100%;
+    filter: opacity(.7) grayscale(30%);
+    -webkit-filter: opacity(.7) grayscale(30%);
+}
+
+.donate-button {
+    text-align: center;
+}
+
+.donate-button a {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #4ca74c;
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border: solid 1px transparent;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+.donate-button:hover a{
+    box-shadow: 2px 2px 5px #888;
+}
+.donate-button:hover a i{
+    color: #ea2525;
+}
+
+.donate-button a i {
+    margin-right: 5px;
+}
+
+@media(min-width: 960px) {
+    .donate-button {
+        text-align: left;
+    }
+}
+
+.projects {
+    /*background-image: url("images/bg-land-blur.jpg");*/
+    background: rgb(245, 235, 213) url("images/bg-triangles.png"); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*filter: blur(5px);
+    -webkit-filter: blur(5px);*/
+}
+
+.projects .title {
+    padding: 15px 0;
+    color: #353535;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.projects .content {
+    width: 80%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0 60px 0;;
+}
+
+.projects .project {
+    flex: 0 1 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    /*width: 30%;*/
+    /*border: solid 1px red;*/
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    border: solid 7px #ebb55f;
+}
+
+@media (min-width: 600px) {
+    .projects .project {
+        flex: 0 1 45%;
+    }
+}
+
+@media(min-width: 960px) {
+    .projects .project {
+        flex: 0 1 30%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .4;
+    z-index: 1;
+    transition: opacity .2s;
+}
+
+.project:hover .overlay{
+    opacity: .2;
+}
+
+/*.project:hover .more {
+    display: block !important;
+}*/
+
+/*.project:hover .title {
+    display: none;
+}*/
+
+/*.project:hover .description {
+    display: block !important;
+}*/
+
+.projects .project .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    z-index: 2;
+}
+
+.more {
+    font-size: .7em;
+    text-transform: initial;
+    text-align: center;
+    z-index: 2;
+    /*display:none;*/
+    margin-top: 15px;
+}
+
+.more a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.projects .project .description {
+    padding: 15px;
+    text-align: justify;
+    font-size: .9em;
+    display: none;
+    color: #fff;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.project-1 {
+    background-image: url("images/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom {
+    background-attachment: scroll;
+    background: rgba(171,110,3,1) url("images/bg-bottom.png");
+    padding: 40px 0;
+}
+
+.bottom .content {
+    width: 80%;
+    max-width: 1024px; 
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.bottom .content a {
+    text-decoration: none;
+    color: #fff;
+}
