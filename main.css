@@ -1,3 +1,15 @@
+@font-face {
+    font-family:'BebasNeue';
+    font-style:normal;
+    src: url("fonts/BebasNeue.otf");
+}
+
+@font-face {
+    font-family:'BebasNeue';
+    font-style:normal;
+    src: url("fonts/BebasNeue.otf");
+}
+
 html, body {
     height: 100%;
 }
@@ -64,12 +76,19 @@ body {
     margin-right: auto;
 }
 
-.intro .content h1 {
+.intro .content .title {
     text-align: center;
     color: rgb(51, 51, 51);
     margin-bottom: 70px;
     text-transform: uppercase;
-    line-height: 2em;
+    /*line-height: 2em;*/
+    font: 50px/80px BebasNeue,OpenSans-Light,Helvetica,Verdana,Arial,sans-serif;
+    line-height: 80px;
+    font-family: BebasNeue, OpenSans-Light, Helvetica, Verdana, Arial, sans-serif;
+}
+
+.intro .content {
+    font-weight: normal;
 }
 
 .give {
