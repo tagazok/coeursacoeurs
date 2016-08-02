@@ -4,12 +4,6 @@
     src: url("fonts/BebasNeue.otf");
 }
 
-@font-face {
-    font-family:'BebasNeue';
-    font-style:normal;
-    src: url("fonts/BebasNeue.otf");
-}
-
 html, body {
     height: 100%;
 }
